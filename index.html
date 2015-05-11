@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+<body>
+	<div id="sm_shareWidgetWrap">
+		<div id="sm_shareButton">
+			<div class="sm_shareIcon">
+				<img src="images/shareIcon.png" alt="Share This" />
+			</div>
+			<div class="sm_shareText">
+				Share
+			</div>
+		</div>
+
+		<div id="sm_slideOutHorizontal" class="">
+			<a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+			<a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+			<a href="#"><img src="images/googlePlus.png" alt="Google Plus" /></a>
+			<a href="#"><img src="images/shareLink.png" alt="Share this" /></a>
+			<a href="#"><img src="images/dots.png" class="dots" alt="More" /></a>
+		</div>
+
+		<div id="sm_slideOutVertical" class="">
+			<a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+			<a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+			<a href="#"><img src="images/googlePlus.png" alt="Google Plus" /></a>
+			<a href="#"><img src="images/shareLink.png" alt="Share this" /></a>
+			<a href="#"><img src="images/dots.png" class="dots" alt="More" /></a>
+		</div>
+	</div>
+
+	<script>
+		$('#sm_shareButton').click(function(){
+			$(this).toggleClass('active');
+			$('#sm_slideOutHorizontal').toggleClass('active');
+			$('#sm_slideOutVertical').toggleClass('active');
+			return;
+		})
+	</script>
+<body>
+</html>
